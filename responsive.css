@@ -1,0 +1,796 @@
+@media screen and (min-width: 576px) {
+  .content {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    max-width: var(--width950);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    max-width: var(--width1180);
+  }
+}
+
+@media screen and (min-width: 1392px) {
+  .content {
+    max-width: var(--width1350);
+  }
+}
+
+/* -------------------------------------------------------------- */
+
+@media screen and (max-width: 1392px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .hero .left {
+    width: 450px;
+  }
+
+  .hero .left h1 {
+    font-size: 50px;
+  }
+
+  .hero .left a {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .hero .left .look {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .hero .left p {
+    font-size: 15px;
+  }
+
+  .hero .right {
+    background-size: 650px;
+    background-position-x: -70px;
+  }
+
+  .border .background .bg {
+    /* background-color: red; */
+    background-size: contain;
+    width: 100vw;
+    height: 45vw;
+  }
+
+  .infogame .left h1 {
+    font-size: 38px;
+  }
+
+  .infogame .left p {
+    font-size: 14px;
+  }
+
+  .infogame .right img.thumbnail {
+    width: 440px;
+  }
+
+  .pickagents {
+    /* background-color: red; */
+  }
+
+  .pickagents img {
+    width: 350px;
+    height: 440px;
+  }
+
+  .pickagents .right .title {
+    font-size: 23px;
+  }
+
+  .pickagents .right p {
+    font-size: 13px;
+  }
+
+  .pickagents .right button {
+    width: 100px;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  /* .waitingfor .background {
+    width: 1400px;
+    height: 1000px;
+  } */
+
+  .waitingfor .contents .left {
+    width: 390px;
+    gap: 30px;
+  }
+
+  .waitingfor .contents .left h1 {
+    font-size: 45px;
+  }
+
+  .waitingfor .contents .left button {
+    height: 42px;
+    width: 140px;
+  }
+
+  .waitingfor .contents img {
+    width: 270px;
+    height: 450px;
+    margin-top: 40px;
+  }
+
+  .footer{
+    /* background-color: red; */
+  }
+
+  .footer .left .title h1{
+    font-size: 26px;
+  }
+
+  .footer .left .title img{
+    width: 25px;
+    height: 20px;
+  }
+
+  .footer .left p{
+    font-size: 14px;
+    width: 470px;
+  }
+
+  .footer .left .buttons{
+    margin-top: 40px;
+    display: flex;
+    gap: 7px;
+  }
+  
+  .footer .left .buttons button{
+    width: 220px;
+    height: 45px;
+    font-size: 13px;
+  }
+
+  .footer .right .upper{
+    /* background-color: blue; */
+  }
+
+  .footer .right .upper ul{
+    gap: 3px;
+    margin-top: 10px;
+  }
+  
+  .footer .right .upper ul li{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero .left h1 {
+    font-size: 40px;
+  }
+
+  .hero .left a {
+    width: 88px;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  .hero .left .look {
+    width: 88px;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  .hero .left p {
+    font-size: 14px;
+  }
+
+  .hero .right {
+    background-size: 60vw;
+    background-repeat: no-repeat;
+    background-position-x: -70px;
+  }
+
+  .border .background {
+    margin-top: -150px;
+  }
+
+  .infogame {
+    /* background-color: red; */
+  }
+
+  .infogame .left h1 {
+    font-size: 35px;
+  }
+
+  .infogame .left p {
+    font-size: 13px;
+  }
+
+  .infogame .right img.thumbnail {
+    width: 380px;
+  }
+
+  .infogame .right img.header {
+    width: 100px;
+  }
+
+  .pickagents {
+    /* background-color: red; */
+    gap: 38px;
+  }
+
+  .pickagents img {
+    width: 330px;
+    height: 420px;
+  }
+
+  .pickagents .right .title {
+    font-size: 21px;
+  }
+
+  .pickagents .right p {
+    font-size: 12px;
+  }
+
+  .pickagents .right button {
+    width: 100px;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  .pickagents {
+    /* background-color: red; */
+  }
+
+  .pickagents img {
+    width: 350px;
+    height: 440px;
+  }
+
+  .pickagents .right .title {
+    font-size: 23px;
+  }
+
+  .pickagents .right p {
+    font-size: 13px;
+  }
+
+  .pickagents .right button {
+    width: 100px;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  /* .waitingfor .background {
+    width: 1400px;
+    height: 1000px;
+  } */
+
+  .waitingfor .contents .left {
+    width: 360px;
+    gap: 20px;
+  }
+
+  .waitingfor .contents .left h1 {
+    font-size: 42px;
+  }
+
+  .waitingfor .contents .left button {
+    height: 38px;
+    width: 130px;
+    font-size: 12px;
+  }
+
+  .waitingfor .contents img {
+    width: 260px;
+    height: 430px;
+    margin-top: 60px;
+  }
+
+
+
+  .footer{
+    /* background-color: red; */
+  }
+
+  .footer .left .title h1{
+    font-size: 25px;
+  }
+
+  .footer .left .title img{
+    width: 24px;
+    height: 19px;
+  }
+
+  .footer .left p{
+    font-size: 13px;
+    width: 460px;
+  }
+
+  .footer .left .buttons{
+    margin-top: 40px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .footer .left .buttons button{
+    width: 210px;
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .footer .right .upper{
+    /* background-color: blue; */
+  }
+
+  .footer .right .upper h1{
+    font-size: 15px;
+  }
+
+  .footer .right .upper ul{
+    gap: 2px;
+    margin-top: 8px;
+  }
+  
+  .footer .right .upper ul li{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero .right {
+    display: none;
+  }
+
+  .border .background {
+    margin-top: -100px;
+  }
+
+  .infogame {
+    /* background-color: red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infogame .left {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infogame .left p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .infogame .left h1 {
+    font-size: 35px;
+  }
+
+  .infogame .left p {
+    font-size: 13px;
+  }
+
+  .infogame .right {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .infogame .right img.thumbnail {
+    width: 350px;
+  }
+
+  .infogame .right img.header {
+    width: 80px;
+  }
+
+  .pickagents {
+    /* background-color: red; */
+    gap: 12px;
+  }
+
+  .pickagents img {
+    width: 50vw;
+    height: 52vw;
+  }
+
+  .pickagents .right {
+    /* background-color: blue; */
+  }
+
+  .pickagents .right .title {
+    font-size: 3vw;
+  }
+
+  .pickagents .right p {
+    font-size: 2vw;
+  }
+
+  .pickagents .right button {
+    width: 100px;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  .waitingfor {
+    /* background-color: red; */
+  }
+
+  /* .waitingfor .background {
+    width: 1100px;
+    height: 1000px;
+  } */
+
+  .waitingfor .contents .left {
+    width: 320px;
+    gap: 16px;
+  }
+
+  .waitingfor .contents .left h1 {
+    font-size: 37px;
+  }
+
+  .waitingfor .contents .left button {
+    height: 35px;
+    width: 110px;
+    font-size: 11px;
+  }
+
+  .waitingfor .contents img {
+    width: 230px;
+    height: 380px;
+    margin-top: 90px;
+  }
+
+
+  .pickagents {
+    /* background-color: red; */
+  }
+
+  .pickagents img {
+    width: 350px;
+    height: 440px;
+  }
+
+  .pickagents .right .title {
+    font-size: 23px;
+  }
+
+  .pickagents .right p {
+    font-size: 13px;
+  }
+
+  .pickagents .right button {
+    width: 100px;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  /* .waitingfor .background {
+    width: 1400px;
+    height: 1000px;
+  } */
+
+  .waitingfor .contents .left {
+    width: 360px;
+    gap: 20px;
+  }
+
+  .waitingfor .contents .left h1 {
+    font-size: 42px;
+  }
+
+  .waitingfor .contents .left button {
+    height: 38px;
+    width: 130px;
+    font-size: 12px;
+  }
+
+  .waitingfor .contents img {
+    width: 260px;
+    height: 430px;
+    margin-top: 60px;
+  }
+
+
+
+  .footer{
+    /* background-color: red; */
+    /* flex-direction: column; */
+  }
+  .footer .left{
+    /* background-color: blue; */
+    width: 55%;
+    padding-right: 25px;
+  }
+  .footer .left .title h1{
+    font-size: 25px;
+  }
+
+  .footer .left .title img{
+    width: 24px;
+    height: 19px;
+  }
+
+  .footer .left p{
+    font-size: 13px;
+    width: auto;
+  }
+
+  .footer .left .buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .footer .left .buttons button{
+    width: 210px;
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .footer .right{
+    width: 100%;
+  }
+
+  .footer .right .upper{
+    /* background-color: blue; */
+    flex-direction: column;
+  }
+
+  .footer .right .upper h1{
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .footer .right .upper ul{
+    gap: 2px;
+    margin-top: 8px;
+  }
+  
+  .footer .right .upper ul li{
+    font-size: 12px;
+  }
+
+  .footer .right .copyright{
+    margin-top: 30px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content {
+    width: 90vw;
+  }
+  .navbar {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .navbar .bar {
+    display: flex;
+  }
+  .navbar {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hero{
+    min-height: 400px;
+  }
+
+  .hero .left {
+    padding: 0 18px;
+    /* background-color: blue; */
+    height: fit-content;
+    margin-top: 30px;
+  }
+
+  .hero .left h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+
+  .hero .left a.infobutton{
+    display: flex;
+    height: 40px;
+    width: 120px;
+    justify-content: center;  
+    margin: 0;  
+  }
+
+  .hero .left .buttons button{
+    margin: 0;
+  }
+
+  .hero .left .buttons{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    /* background-color: blue; */
+    gap: 7px;
+    margin-top: 13px;
+  }
+
+  .hero .left a {
+    width: 78px;
+    height: 23px;
+    font-size: 13px;
+    display: none;
+  }
+
+  .hero .left .look {
+    width: 105px;
+    height: 40px;
+    font-size: 13px;
+    margin-top: 13px;
+  }
+
+  .hero .left p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .border .background {
+    margin-top: -20px;
+  }
+
+  .infogame .right img.thumbnail {
+    width: 300px;
+  }
+
+  .pickagents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pickagents img {
+    height: 300px;
+    width: 220px;
+  }
+
+  .pickagents .right {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .pickagents .right h1 {
+    font-size: 27px;
+  }
+
+  .pickagents .right p {
+    font-size: 16px;
+  }
+
+  .pickagents .right .title h1.white {
+    margin-top: -5px;
+  }
+
+  /* .waitingfor{
+        background-color: red;
+    } */
+
+  .waitingfor .contents {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .waitingfor .contents .left {
+    width: 320px;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .waitingfor .contents .left h1 {
+    font-size: 37px;
+    text-align: center;
+  }
+
+  .waitingfor .contents .left button {
+    height: 35px;
+    width: 110px;
+    font-size: 11px;
+  }
+
+  .waitingfor .contents img {
+    width: 230px;
+    height: 380px;
+    /* margin-top: 90px; */
+    margin-top: -20px;
+  }
+
+  .content{
+    /* background-color: blue; */
+    width: 100%;
+  }
+
+  .footer{
+    height: fit-content;
+    background-color: #061119;
+    flex-direction: column;
+    padding: 30px 30px;
+  }
+
+  .footer .background{
+    display: none;
+  }
+
+  .footer .left{
+    /* background-color: blue; */
+    width: 100%;
+    padding: 0;
+  }
+  .footer .left .title h1{
+    font-size: 25px;
+  }
+
+  .footer .left .title img{
+    width: 24px;
+    height: 19px;
+  }
+
+  .footer .left p{
+    font-size: 13px;
+    width: auto;
+  }
+
+  .footer .left .buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .footer .left .buttons button{
+    width: 210px;
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .footer .right{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footer .right .upper{
+    /* background-color: blue; */
+    flex-direction: row;
+  }
+
+  .footer .right .upper h1{
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .footer .right .upper ul{
+    gap: 2px;
+    margin-top: 8px;
+  }
+  
+  .footer .right .upper ul li{
+    font-size: 12px;
+  }
+
+  .footer .right .copyright{
+    margin-top: 20px;
+    font-size: 10px;
+  }
+}

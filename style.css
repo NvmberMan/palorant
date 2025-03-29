@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: "Inria Sans", serif;
   color: var(--primary-color);
+  scroll-behavior: smooth;
+
 }
 
 body{
@@ -17,25 +19,30 @@ body{
   justify-content: center;
 }
 
-.container .content {
-  /* background-color: red; */
+.content {
+  /* background-color: rgba(255, 0, 0, 0.432); */
   display: flex;
   flex-direction: column;
   width: 1100px;
 
 }
 
-:root {
-  /* Warna Dasar */
-  --primary-color: white; /* Biru */
-  --secondary-color: #f1502a; /* Hijau */
-  --accent-color: #2d3b54; /* Merah */
-  --text-color: #2c3e50; /* Hitam gelap */
-  --background-color: #ecf0f1; /* Abu terang */
+.hide{
+  display: none;
+}
 
-  /* Variasi Warna */
-  --primary-light: #5dade2;
-  --primary-dark: #21618c;
+:root {
+  --primary-color: white;
+  --secondary-color: #f1502a; 
+  --accent-color: #2d3b54; 
+  --text-color: #2c3e50;
+  --background-color: #ecf0f1;
+
+  --width1350: 1350px;
+  --width1180: 1180px;
+  --width950: 950px;
+  --width720: 720px;
+  --width540: 540px;
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -44,6 +51,7 @@ body{
   /* background-color: blue; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 50px 30px 50px 0px;
 }
 
@@ -51,6 +59,7 @@ body{
 
 .navbar .header{
   width: 130px;
+  cursor: pointer;
 }
 .navbar ul {
   display: flex;
@@ -59,6 +68,84 @@ body{
   align-items: center;
   font-size: 16px;
   font-weight: 100;
+}
+
+.navbar ul li{
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.navbar ul li:hover{
+  color: rgba(255, 255, 255, 0.744);
+}
+
+.navbar .bar{
+  width: 25px;
+  height: 25px;
+  background-image: url(Resources/Humburger.png);
+  background-size: cover;
+  display: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.navbar .bar:hover{
+  transform: scale(1.05);
+}
+
+
+
+.navbar-side{
+  position: fixed;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.861);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  scroll-behavior: unset;
+  padding-left: 10px;
+}
+
+.navbar-side.hide{
+  display: none;
+  
+}
+
+.navbar-side img{
+  width: 100px;
+  margin-top: 20px;
+}
+
+.navbar-side ul{
+  margin-top: 20px;
+  list-style: none;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+.navbar-side ul li{
+  background-color: rgb(37, 37, 37);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navbar-side ul li:hover{
+  background-color: rgb(46, 46, 46);
+
+}
+
+.navbar-side ul li.close{
+  background-color: var(--secondary-color);
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -99,6 +186,7 @@ body{
   font-family: "Inria Sans", serif;
   letter-spacing: 5px;
   font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 .hero .left p.head{
@@ -117,6 +205,27 @@ body{
   font-weight: 300;
   font-size: 14px;
   font-family: "Poppins", serif;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hero .left a{
+  background-color: var(--secondary-color);
+  width: 110px;
+  height: 37px;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Poppins", serif;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 8px 17px;
+  text-decoration: none;
+}
+
+
+.hero .left a:hover{
+  background-color: #c24023;
 }
 
 .hero .left p{
@@ -130,6 +239,10 @@ body{
 .hero .left .look {
   margin-top: 30px;
   background-color: var(--accent-color);
+}
+
+.hero .left .look:hover{
+  background-color: #1f2a3b;
 }
 
 .hero .right{
@@ -215,6 +328,12 @@ body{
     padding-top: 350px;
 }
 
+#infogame{
+  position: absolute;
+  top: 0;
+  margin-top: 180px;
+}
+
 .infogame .left{
   /* background-color: blue; */
   width: 1000px;
@@ -281,7 +400,7 @@ body{
 }
 
 
-/* ---------------------------- */
+/* ---------------------------------------------------------- */
 
 
 .pickagents{
@@ -353,6 +472,11 @@ body{
   font-weight: 300;
   font-family: "Poppins", serif;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.pickagents .right button:hover{
+  background-color: #18202d;
 }
 
 
@@ -374,7 +498,7 @@ body{
   /* background-color: green; */
   background-image: url(Resources/BackgroundWaitingFor.png);
   background-size: cover;
-  width: 1500px;
+  width: 100vw;
   height: 1100px;
   position: absolute;
   z-index: -1;
@@ -417,6 +541,11 @@ body{
   font-family: 'Poppins', serif;
   font-weight: 300;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.waitingfor .contents .left button:hover{
+  background-color: #be3e22;
 }
 
 .waitingfor .contents img{
@@ -439,7 +568,7 @@ body{
 .footer .background{
   background-color: #061119;
   position: absolute;
-  width: 1500px;
+  width: 100vw;
   height: 370px;
   z-index: -1;
 }
@@ -493,17 +622,27 @@ body{
   border: none;
   font-size: 13px;
   font-family: 'Poppins', serif;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
 .footer .left .buttons .button1{
   background-color: #D9D9D9;
   color: var(--accent-color);
-  font-weight: 600;
+}
+
+.footer .left .buttons .button1:hover{
+  background-color: #f3f3f3;
 }
 
 .footer .left .buttons .button2{
   background-color: transparent;
   border: 1.5px solid white;
+}
+
+.footer .left .buttons .button2:hover{
+  background-color: #d8d8d8;
+  color: var(--accent-color);
 }
 
 .footer .right{
@@ -532,6 +671,13 @@ body{
 .footer .right .upper ul li{
   font-size: 13.5px;
   color: rgba(255, 255, 255, 0.84);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer .right .upper ul li:hover{
+  color: rgba(255, 255, 255, 0.612);
+
 }
 
 

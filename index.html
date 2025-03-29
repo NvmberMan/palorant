@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="responsive.css">
     <title>Palorant</title>
   </head>
   <body>
@@ -25,13 +26,26 @@
             <li>News</li>
             <li>Report Bug</li>
           </ul>
+          <div class="bar" onclick="clickHamburger()"></div>
+        </div>
+
+        <div class="navbar-side hide">
+          <img class="header" src="Resources/Header.png" alt="" />
+          <ul>
+            <li>Home</li>
+            <li>Agents</li>
+            <li>Maps</li>
+            <li>News</li>
+            <li>Report Bug</li>
+            <li class="close" onclick="clickHamburger()">Back</li>
+          </ul>
         </div>
 
         <div class="hero">
           <div class="left">
             <div class="background"></div>
             <h1>Palorant</h1>
-            <button class="info">Info Game</button>
+            <a href="#infogame">Info Game</a>
             <p class="head">Game Beyond Limits.</p>
             <p>
               Palorant is a tactical FPS by Giot Games, where two teams of five
@@ -39,8 +53,10 @@
               strategize, and outplay your opponents in Competitive, Unranked,
               Deathmatch, and Spike Rush.
             </p>
-
-            <button class="look">Look Agents</button>
+            <div class="buttons">
+              <button class="look">Look Agents</button>
+              <a href="#infogame" class="infobutton hide">Info Game</a>
+            </div>
           </div>
           <div class="right">
             <div class="cloud"></div>
@@ -55,6 +71,7 @@
         </div>
 
         <div class="infogame">
+          <div id="infogame"></div>
           <div class="left">
             <h1>ABOUT US</h1>
             <div class="line"></div>
@@ -73,6 +90,7 @@
           </div>
           <div class="background"></div>
         </div>
+
         <div class="pickagents">
           <img src="Resources/Pickagent.png" alt="" />
           <div class="right">
@@ -89,6 +107,7 @@
             <button>See More</button>
           </div>
         </div>
+        
         <div class="waitingfor">
           <div class="contents">
             <div class="left">
