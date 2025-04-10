@@ -173,6 +173,43 @@
     font-size: 12px;
   }
 
+  .maps-grid{
+    /* background-color: red; */
+  }
+  
+  .maps-grid .item{
+    align-items: center;
+  }
+
+  .maps-grid .item img{
+    width: 600px;
+    height: 280px;
+  
+  }
+
+  .maps-grid .item .right .text h1{
+    font-size: 16px;
+    margin-top: 3px;
+  
+  }
+  
+  .maps-grid .item .right .text p{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+
+  .maps-grid .item .right .images{
+    gap: 7px;
+    margin-top: 8px;
+  }
+  .maps-grid .item .right .images img{
+    width: 160px;
+    height: 80px;
+  }
+  
+  
+
 
   .maps-container{
     /* background-color: red; */
@@ -196,6 +233,26 @@
   .maps-ads .side{
     width: 70px;
   }
+  
+
+  .hero-news .preview{
+  margin-right: -90px;
+
+  }
+  
+  .news-grid{
+    /* background-color: red; */
+    gap: 6px;
+    padding: 70px 0;
+  }
+  
+  
+  
+  .news-grid .item{
+    width: 312px;
+    height: 290px;
+  }
+  
   
 }
 
@@ -372,6 +429,48 @@
     font-size: 12px;
   }
 
+  
+  .maps-grid{
+    /* background-color: red; */
+  }
+  
+  .maps-grid .item{
+    align-items: center;
+  }
+
+  .maps-grid .item img{
+    width: 490px;
+    height: 215px;
+  
+  }
+
+  .maps-grid .item .right{
+    padding-left: 5px;
+
+  }
+
+  .maps-grid .item .right .text h1{
+    font-size: 15px;
+    margin-top: 2px;
+  
+  }
+  
+  .maps-grid .item .right .text p{
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+
+  .maps-grid .item .right .images{
+    gap: 3px;
+    margin-top: 8px;
+    max-width: 400px;
+  }
+  .maps-grid .item .right .images img{
+    width: 150px;
+    height: 80px;
+  }
+  
 
   .maps-container{
     /* background-color: red; */
@@ -417,6 +516,26 @@
   .maps-ads .side{
     width: 50px;
   }
+
+
+  .news2{
+    /* background-color: blue; */
+  }
+  
+  
+  .news-grid{
+    /* background-color: red; */
+    gap: 6px;
+    padding: 70px 0;
+  }
+  
+  
+  
+  .news-grid .item{
+    width: 342px;
+    height: 290px;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -679,6 +798,72 @@
     text-align: center;
   }
 
+  
+  .maps-grid{
+    /* background-color: red; */
+    gap: 40px;
+  }
+  
+  .maps-grid .item{
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .maps-grid .item img{
+    width: 490px;
+    height: 315px;
+  
+  }
+
+  .maps-grid .item .right{
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .maps-grid .item .right .text h1{
+    font-size: 18px;
+    margin-top: 20px;
+  
+  }
+  
+  .maps-grid .item .right .text p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+
+  .maps-grid .item .right .images {
+    gap: 8px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 79vw;
+    justify-content: flex-start; /* atau center, bebas sesuai desain */
+    /* background-color: green; */
+    display: flex; /* penting agar flexbox aktif */
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto; /* ini dia biar bisa di-scroll */
+    margin-bottom: 20px;
+    flex-shrink: 0; /* penting supaya tidak mengecil otomatis */
+  }
+  
+  .maps-grid .item .right .images img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .maps-grid .item .right .images::-webkit-scrollbar {
+    height: 7px;
+  }
+  
+  .maps-grid .item .right .images::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+  }
+
+
   .maps-container{
     /* background-color: red; */
     min-height: 0;
@@ -784,7 +969,20 @@
   }
 
   
+
+  .news-grid{
+    justify-content: center;
+
+  }
+
+  .news2 .background{
+    width: 200vw;
+    margin-left: -100px;
+    /* background-color: red; */
+  }
   
+  
+
 }
 
 @media screen and (max-width: 576px) {
@@ -1008,11 +1206,20 @@
 
 
 
-
   .hero-maps .title {
     /* background-color: red; */
     width: 100%;
   }
+
+  .maps-grid .item img{
+    width: 330px;
+    height: 215px;
+  }
+
+  .maps-grid .item .right .images{
+    max-width: 90vw;
+  }
+
 
   .maps-container{
     /* background-color: red; */
@@ -1068,4 +1275,30 @@
   .maps-ads .side{
     width: 10px;
   }
+
+  .news-container{
+    /* background-color: green; */
+    padding: 0px 30px;
+  }
+
+
+  .hero-news{
+    padding: 0;
+  }
+
+  .hero-news .title{
+    padding: 0 30px;
+  }
+  .news2{
+    background-color: #061119;
+  }
+
+  .news-grid{
+    justify-content: center;
+  }
+
+  .news2 .background{
+    display: none;
+  }
+  
 }

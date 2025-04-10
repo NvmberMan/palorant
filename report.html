@@ -30,13 +30,19 @@
           </div>
 
 
-          <form action="" class="report-form">
-            <input type="email" placeholder="Email">
-            <input class="message" type="text" placeholder="Message">
-            <input type="text" placeholder="Category">
-            <input type="file" placeholder="Upload">
-            <button>Submit</button>
-          </form>
+          <form action="" class="report-form" id="report-form">
+            <div class="hide" id="error-message"></div>
+            <input type="text" id="username" placeholder="Username">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="server" placeholder="Server">
+            <input class="message" type="text" id="message" placeholder="Detailed description of the bug">
+            <div class="checkbox">
+              <input id="check" type="checkbox">
+              <label for="check">Izinkan kami mengirim email lanjutan terkait laporan ini.</label>
+            </div>
+            <button type="submit">Submit</button>
+          </form>          
+          
 
           <div class="preview"></div>
         </div>

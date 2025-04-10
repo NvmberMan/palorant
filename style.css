@@ -722,7 +722,7 @@ body.agents {
 .hero-agents .card-container .card {
   width: 250px;
   height: 400px;
-  border: solid white 1.3px;
+  /* border: solid white 1.3px; */
 
   filter: drop-shadow(12px 0px 0px #000000);
   cursor: pointer;
@@ -737,6 +737,21 @@ body.agents {
   justify-content: center;
   align-items: center;
   font-weight: 200;
+}
+
+
+.hero-agents .card-container .card .role {
+  width: 100px;
+  height: 7%;
+  background-color: #03151f;
+  margin-bottom: -16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-size: 11px;
+  padding-top: 5px;
+  color: rgb(209, 209, 209);
 }
 .hero-agents .card-container .card .background {
   width: 100%;
@@ -790,6 +805,65 @@ body.maps{
   font-weight: 200;
 }
 
+
+
+
+.maps-grid{
+  /* background-color: red; */
+  min-height: 500px;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.maps-grid .item{
+  display: flex;
+}
+
+
+.maps-grid .item img{
+  width: 650px;
+  height: 350px;
+}
+
+
+.maps-grid .item .right .text h1{
+  font-size: 18px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+
+}
+
+.maps-grid .item .right .text p{
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  font-weight: 100;
+  /* font-family: 'Poppins', serif; */
+  font-family: "Inria Sans", serif;
+}
+
+.maps-grid .item .right{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: blue; */
+}
+
+.maps-grid .item .right .images{
+  /* background-color: green; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.maps-grid .item .right .images img{
+  width: 190px;
+  height: 100px;
+}
 
 .maps-container{
   /* background-color: red; */
@@ -917,21 +991,25 @@ body.maps{
 
 
 body.news{
-  background: linear-gradient(180deg, #6A0000 0%, #D00000 34%, #D00000 89%);
+  background-color: #03151f;
+  /* background: linear-gradient(180deg, #6A0000 0%, #D00000 34%, #D00000 89%); */
 }
 
 .hero-news {
   min-height: 100vh;
+  position: relative;
 }
 
 .hero-news .preview{
   width: 300px;
   height: 600px;
   position: absolute;
-  right: 0; top: 0;
+  right: 0; 
+  top: 0;
   background-image: url(Resources/Agents/Reyna.png);
   background-size: cover;
   margin-top: 280px;
+  margin-right: -100px;
 }
 
 .hero-news .title {
@@ -966,7 +1044,7 @@ body.news{
 }
 
 .news-container .card{
-  background-color: #E63246;
+  background-color: #505050;
   border: 5px solid white;
   width: 300px;
   height: 500px;
@@ -997,12 +1075,86 @@ body.news{
   filter: brightness(0);
 }
 
+.news2{
+  /* background-color: blue; */
+  position: relative;
+  /* width: auto; */
+}
+
+.news2 .background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #061119;
+  top: 0;
+  z-index: -1;
+  /* margin-left: -170px; */
+}
+
+
+.news-grid{
+  /* background-color: blue; */
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 80px 0;
+}
+
+
+
+.news-grid .item{
+  width: 360px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-grid .item .image{
+  width: 100%;
+  height: 60%;
+  position: relative;
+}
+
+.news-grid .item .image img{
+  width: 100%;
+  height: 100%;
+}
+
+.news-grid .item h3{
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  margin-bottom: 6px;
+  margin-left: 13px;
+}
+
+.news-grid .item .text{
+  background-color: black;
+  flex-grow: 1;
+  padding: 5px 13px;
+}
+
+
+.news-grid .item .text .h4{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.news-grid .item .text p{
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
 
 
 /* ------------------------ */
 
 body.report{
-  background-color: black;
+  background-color: #03151f;
 }
 
 
@@ -1058,10 +1210,58 @@ body.report{
   padding-left: 10px;
   background-color: transparent;
   border: none;
+  outline: none;
   border-bottom: 1px solid white;
+}
+
+.hero-report form input::placeholder{
+  transition: 0.2s;
+
+}
+
+.hero-report form input:focus::placeholder{
+  /* font-size: 13px; */
+  /* padding-left: 12px; */
+  transform: translateY(-22px);
+
 }
 
 .hero-report form button{
   height: 60px;
   color: black;
+}
+
+
+.hero-report .checkbox{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.hero-report .checkbox input{
+  width: 16px;
+}
+
+.hero-report .checkbox label{
+  color: rgba(255, 255, 255, 0.683);
+}
+
+.hero-report #error-message{
+  background-color: #D00000;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: 0.1s;
+  transform: scale(1);
+  position: static;
+}
+
+.hero-report #error-message.hide{
+  opacity: 0;
+  transform: scale(1.02);
+  position: absolute;
 }
