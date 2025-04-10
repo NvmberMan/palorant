@@ -90,44 +90,44 @@ const news = [
   {
     name: "Jett",
     description:
-      "Cepat, lincah, dan mematikan. Jett adalah pilihan tepat bagi mereka yang suka bermain agresif. Gunakan kemampuan dasarnya untuk mengelabui lawan dan serang dengan kecepatan yang tak terduga.",
+      "Fast, agile, and deadly. Jett is the perfect choice for players who love to play aggressively. Use her core abilities to outsmart opponents and strike with unexpected speed.",
     fun_fact:
-      "Jett berasal dari Korea Selatan dan terkenal dengan gaya bermain yang stylish.",
+      "Jett hails from South Korea and is known for her stylish playstyle.",
   },
   {
     name: "Raze",
     description:
-      "Ahli ledakan yang penuh kejutan! Raze membawa keceriaan di setiap pertarungan dengan granat dan roket yang menghancurkan lawan. Jangan biarkan dia mendekat jika tidak ingin terkena serangan dahsyatnya.",
+      "A demolition expert full of surprises! Raze brings excitement to every fight with her grenades and rockets that obliterate enemies. Don’t let her get too close unless you’re ready for a blast.",
     fun_fact:
-      "Raze berasal dari Brasil dan dikenal sebagai agen paling eksplosif di medan perang.",
+      "Raze is from Brazil and is known as the most explosive Agent on the battlefield.",
   },
   {
     name: "Sage",
     description:
-      "Pelindung tim yang bisa membalikkan keadaan. Dengan kemampuan penyembuhan dan dinding penghalang, Sage adalah aset berharga yang selalu dicari oleh tim mana pun.",
+      "A team protector who can turn the tide. With healing abilities and barrier walls, Sage is a valuable asset every team wants on their side.",
     fun_fact:
-      "Sage berasal dari China dan memiliki keahlian dalam seni penyembuhan kuno.",
+      "Sage is from China and is skilled in the ancient art of healing.",
   },
   {
     name: "Phoenix",
     description:
-      "Bermain dengan api bukan masalah bagi Phoenix. Dia bisa membakar lawan, menyembuhkan dirinya sendiri, dan kembali ke pertempuran dengan gaya. Pemain yang percaya diri akan sangat cocok dengannya.",
+      "Playing with fire is no problem for Phoenix. He can burn enemies, heal himself, and return to the fight in style. Confident players will find a perfect match in him.",
     fun_fact:
-      "Phoenix berasal dari Inggris dan memiliki kepribadian yang karismatik di medan tempur.",
+      "Phoenix is from the UK and brings a charismatic presence to the battlefield.",
   },
   {
     name: "Cypher",
     description:
-      "Ahli mata-mata yang tak tertandingi. Dengan perangkat dan kamera pengintainya, Cypher bisa mengendalikan medan perang dari bayang-bayang. Tidak ada musuh yang bisa bersembunyi darinya.",
+      "An unrivaled spy master. With his traps and surveillance camera, Cypher controls the battlefield from the shadows. No enemy can hide from his watchful eyes.",
     fun_fact:
-      "Cypher berasal dari Maroko dan selalu menyembunyikan identitas aslinya.",
+      "Cypher is from Morocco and always keeps his true identity a secret.",
   },
   {
     name: "Omen",
     description:
-      "Bayangan yang selalu mengintai. Omen adalah agen misterius yang mampu berteleportasi dan membingungkan musuhnya. Jika dia menghilang dari pandangan, bersiaplah untuk serangan mendadak.",
+      "A shadow that always lurks. Omen is a mysterious Agent capable of teleporting and confusing his enemies. If he vanishes from sight, prepare for a sudden strike.",
     fun_fact:
-      "Identitas asli Omen tetap menjadi misteri, bahkan bagi para agen lainnya.",
+      "Omen’s true identity remains a mystery—even to the other Agents.",
   },
 ];
 
@@ -199,44 +199,45 @@ const maps = [
   {
     name: "Sunset",
     description:
-      "Sebuah bencana di fasilitas kerajaan lokal mengancam akan melahap seluruh lingkungan. Berhenti sejenak di truk makanan favoritmu lalu bertarunglah melintasi kota dalam peta tiga jalur tradisional ini.",
-    type: "Tiga jalur",
-    features: [],
-    theme: "Kota, tradisional",
+      "A disaster at a local kingdom facility threatens to engulf the whole neighborhood. Stop at your favorite food truck then fight across the city in this traditional three lane map.",
+    type: "Three lane",
+    features: ["Traditional layout", "Urban setting"],
+    theme: "City, urban",
   },
   {
     name: "Lotus",
     description:
-      "Struktur kuno dengan saluran astral yang memancarkan kekuatan misterius. Pintu batu raksasa membuka jalur unik menuju tiga situs berbeda yang siap dijelajahi dalam pertempuran taktis.",
-    type: "Tiga situs",
-    features: ["Pintu batu yang berputar", "Struktur kuno"],
-    theme: "Mistik, kuil kuno",
+      "A mysterious structure housing an astral conduit radiates with ancient power. Great stone doors provide a variety of movement opportunities and unlock the paths to three mysterious sites.",
+    type: "Three sites",
+    features: ["Rotating stone doors", "Ancient temple"],
+    theme: "Mystic, ancient ruins",
   },
   {
     name: "Pearl",
     description:
-      "Peta dua situs yang terletak di kota bawah laut penuh warna. Tanpa mekanik tambahan, Pearl mengandalkan jalur sempit dan terbuka untuk pertarungan yang cepat dan intens.",
-    type: "Dua situs",
-    features: ["Tanpa mekanik khusus", "Kota bawah laut"],
-    theme: "Futuristik, bawah laut",
+      "Attackers push down into the Defenders on this two-site map set in a vibrant, underwater city. Pearl is a geo-driven map with no mechanics. Take the fight through a compact mid or the longer range wings in our first map set in Omega Earth.",
+    type: "Two sites",
+    features: ["No special mechanics", "Underwater city"],
+    theme: "Futuristic, underwater",
   },
   {
     name: "Fracture",
     description:
-      "Fasilitas eksperimen yang terbelah akibat insiden radianite. Peta ini memiliki pertahanan dari dua sisi, memungkinkan pendekatan strategis yang berbeda bagi kedua tim.",
-    type: "Dua situs",
-    features: ["Spawn bertahan terpisah", "Ziplines"],
-    theme: "Teknologi tinggi, eksperimen",
+      "A top secret research facility split apart by a failed radianite experiment. With defender options as divided as the map, the choice is yours: meet the attackers on their own turf or batten down the hatches to weather the assault.",
+    type: "Two sites",
+    features: ["Split defender spawns", "Ziplines"],
+    theme: "High-tech, experimental",
   },
   {
     name: "Breeze",
     description:
-      "Sebuah pulau tropis yang menghadirkan medan luas dan terbuka. Dengan pemandangan reruntuhan dan gua pantai, Breeze cocok untuk duel jarak jauh dan rotasi cepat.",
-    type: "Dua situs",
-    features: ["Area terbuka luas", "Pertempuran jarak jauh"],
-    theme: "Tropis, reruntuhan",
+      "Take in the sights of historic ruins or seaside caves on this tropical paradise. But bring some cover. You’ll need them for the wide open spaces and long range engagements. Watch your flanks and this will be a Breeze.",
+    type: "Two sites",
+    features: ["Wide open areas", "Long range combat"],
+    theme: "Tropical, ruins",
   },
 ];
+
 
 function onStart() {
   let agentContainer = document.getElementById("card-container");
@@ -304,7 +305,7 @@ function onStart() {
     let i = 0;
     news2.forEach((element) => {
       news2Container.innerHTML += `
-            <div class="item">
+            <div class="item" onclick="detailNews(${i})">
               <div class="image">
                 <img src="Resources/News/image-${i++}.png" alt="">
                 <h3>📅 ${element.date}</h3>
@@ -405,3 +406,21 @@ document.getElementById("report-form").addEventListener("submit", function (e) {
     alert("Laporan berhasil dikirim!");
   }
 });
+
+function detailNews(index) {
+  let newsPreview = document.getElementById("news-preview");
+  let image = document.getElementById("news-preview-img");
+  let title = document.getElementById("news-preview-title");
+  let description = document.getElementById("news-preview-description");
+
+  newsPreview.classList.remove("hidden");
+
+  title.innerHTML = news2[index].title;
+  description.innerHTML = news2[index].description;
+  image.src = `Resources/News/image-${index}.png`;
+}
+
+function closeNews() {
+  let newsPreview = document.getElementById("news-preview");
+  newsPreview.classList.add("hidden");
+}
