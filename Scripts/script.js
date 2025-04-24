@@ -235,7 +235,7 @@ const maps = [
     type: "Two sites",
     features: ["Wide open areas", "Long range combat"],
     theme: "Tropical, ruins",
-  },
+  }
 ];
 
 
@@ -261,7 +261,7 @@ function onStart() {
             `;
     });
   }
-
+  
   if (newsContainer) {
     news.forEach((element) => {
       newsContainer.innerHTML += `
@@ -380,19 +380,30 @@ document.getElementById("report-form").addEventListener("submit", function (e) {
   const errorDiv = document.getElementById("error-message");
 
   const emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const minUsernameLength = 3;
+  const minMessageLength = 10;
+  const genericMessages = ["error", "bug", "masalah", "problem"];
 
   let errorText = "";
 
   if (!username) {
     errorText = "Username harus diisi.";
+  } else if (username.length < minUsernameLength) {
+    errorText = "Username terlalu pendek (minimal 3 karakter).";
   } else if (!email) {
     errorText = "Email harus diisi.";
   } else if (!emailFormat.test(email)) {
     errorText = "Format email tidak valid.";
   } else if (!server) {
     errorText = "Server harus diisi.";
+  } else if (server.length < 3) {
+    errorText = "Nama server terlalu pendek.";
   } else if (!message) {
     errorText = "Deskripsi bug harus diisi.";
+  } else if (message.length < minMessageLength) {
+    errorText = "Deskripsi terlalu pendek, mohon beri penjelasan lebih detail.";
+  } else if (genericMessages.includes(message.toLowerCase())) {
+    errorText = "Deskripsi terlalu umum. Mohon jelaskan lebih rinci.";
   } else if (!checkbox) {
     errorText = "Anda harus menyetujui pengiriman email lanjutan.";
   }
@@ -402,10 +413,12 @@ document.getElementById("report-form").addEventListener("submit", function (e) {
     errorDiv.innerHTML = errorText;
     errorDiv.scrollIntoView({ behavior: "smooth", block: "center" });
   } else {
+    errorDiv.classList.add("hide");
     errorDiv.innerHTML = "";
     alert("Laporan berhasil dikirim!");
   }
 });
+
 
 function detailNews(index) {
   let newsPreview = document.getElementById("news-preview");

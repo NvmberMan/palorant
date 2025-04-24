@@ -63,6 +63,13 @@
     background-position-x: -70px;
   }
 
+  .hero .right .cloud {
+    width: 80vw;
+    height: 500px;
+    background-size: cover;
+    /* transform: translateX(200px); */
+  }
+
   .border .background .bg {
     /* background-color: red; */
     background-size: contain;
@@ -80,10 +87,6 @@
 
   .infogame .right img.thumbnail {
     width: 440px;
-  }
-
-  .pickagents {
-    /* background-color: red; */
   }
 
   .pickagents img {
@@ -130,130 +133,108 @@
     margin-top: 40px;
   }
 
-  .footer{
-    /* background-color: red; */
-  }
-
-  .footer .left .title h1{
+  .footer .left .title h1 {
     font-size: 26px;
   }
 
-  .footer .left .title img{
+  .footer .left .title img {
     width: 25px;
     height: 20px;
   }
 
-  .footer .left p{
+  .footer .left p {
     font-size: 14px;
     width: 470px;
   }
 
-  .footer .left .buttons{
+  .footer .left .buttons {
     margin-top: 40px;
     display: flex;
     gap: 7px;
   }
-  
-  .footer .left .buttons button{
+
+  .footer .left .buttons button {
     width: 220px;
     height: 45px;
     font-size: 13px;
   }
 
-  .footer .right .upper{
-    /* background-color: blue; */
-  }
-
-  .footer .right .upper ul{
+  .footer .right .upper ul {
     gap: 3px;
     margin-top: 10px;
   }
-  
-  .footer .right .upper ul li{
+
+  .footer .right .upper ul li {
     font-size: 12px;
   }
 
-  .maps-grid{
-    /* background-color: red; */
-  }
-  
-  .maps-grid .item{
+  .maps-grid .item {
     align-items: center;
   }
 
-  .maps-grid .item img{
+  .maps-grid .item img {
     width: 600px;
     height: 280px;
-  
   }
 
-  .maps-grid .item .right .text h1{
+  .maps-grid .item .right .text h1 {
     font-size: 16px;
     margin-top: 3px;
-  
   }
-  
-  .maps-grid .item .right .text p{
+
+  .maps-grid .item .right .text p {
     font-size: 15px;
     letter-spacing: 0.5px;
     margin-top: 3px;
   }
 
-  .maps-grid .item .right .images{
+  .maps-grid .item .right .images {
     gap: 7px;
     margin-top: 8px;
   }
-  .maps-grid .item .right .images img{
+  .maps-grid .item .right .images img {
     width: 160px;
     height: 80px;
   }
-  
-  
 
-
-  .maps-container{
+  .maps-container {
     /* background-color: red; */
     min-height: 600px;
     display: grid;
-    grid-template-areas: "prev prev prev poster"
-                         "prev prev prev poster"
-                         "prev prev prev poster"
-                         "prev1 prev2 prev3 poster";
-  
+    grid-template-areas:
+      "prev prev prev poster"
+      "prev prev prev poster"
+      "prev prev prev poster"
+      "prev1 prev2 prev3 poster";
+
     justify-content: start;
     grid-template-columns: 0fr 1.7fr 1.7fr 1.5fr;
     gap: 8px;
     margin-top: 30px;
   }
 
-  .maps-container .prev{
+  .maps-container .prev {
     height: 420px;
   }
 
-  .maps-ads .side{
+  .maps-ads .side {
     width: 70px;
   }
-  
 
-  .hero-news .preview{
-  margin-right: -90px;
-
+  .hero-news .preview {
+    margin-right: -90px;
   }
-  
-  .news-grid{
+
+  .news-grid {
     /* background-color: red; */
     gap: 6px;
     padding: 70px 0;
   }
-  
-  
-  
-  .news-grid .item{
+
+  .news-grid .item {
     width: 312px;
     height: 290px;
   }
-  
-  
 }
 
 @media screen and (max-width: 992px) {
@@ -285,10 +266,6 @@
 
   .border .background {
     margin-top: -150px;
-  }
-
-  .infogame {
-    /* background-color: red; */
   }
 
   .infogame .left h1 {
@@ -329,10 +306,6 @@
     width: 100px;
     height: 33px;
     font-size: 12px;
-  }
-
-  .pickagents {
-    /* background-color: red; */
   }
 
   .pickagents img {
@@ -380,162 +353,135 @@
     margin-top: 60px;
   }
 
-
-
-  .footer{
-    /* background-color: red; */
-  }
-
-  .footer .left .title h1{
+  .footer .left .title h1 {
     font-size: 25px;
   }
 
-  .footer .left .title img{
+  .footer .left .title img {
     width: 24px;
     height: 19px;
   }
 
-  .footer .left p{
+  .footer .left p {
     font-size: 13px;
     width: 460px;
   }
 
-  .footer .left .buttons{
+  .footer .left .buttons {
     margin-top: 40px;
     display: flex;
     gap: 5px;
   }
-  
-  .footer .left .buttons button{
+
+  .footer .left .buttons button {
     width: 210px;
     height: 45px;
     font-size: 12px;
   }
 
-  .footer .right .upper{
-    /* background-color: blue; */
-  }
-
-  .footer .right .upper h1{
+  .footer .right .upper h1 {
     font-size: 15px;
   }
 
-  .footer .right .upper ul{
+  .footer .right .upper ul {
     gap: 2px;
     margin-top: 8px;
   }
-  
-  .footer .right .upper ul li{
+
+  .footer .right .upper ul li {
     font-size: 12px;
   }
 
-  
-  .maps-grid{
-    /* background-color: red; */
-  }
-  
-  .maps-grid .item{
+  .maps-grid .item {
     align-items: center;
   }
 
-  .maps-grid .item img{
+  .maps-grid .item img {
     width: 490px;
     height: 215px;
-  
   }
 
-  .maps-grid .item .right{
+  .maps-grid .item .right {
     padding-left: 5px;
-
   }
 
-  .maps-grid .item .right .text h1{
+  .maps-grid .item .right .text h1 {
     font-size: 15px;
     margin-top: 2px;
-  
   }
-  
-  .maps-grid .item .right .text p{
+
+  .maps-grid .item .right .text p {
     font-size: 13px;
     letter-spacing: 0.5px;
     margin-top: 3px;
   }
 
-  .maps-grid .item .right .images{
+  .maps-grid .item .right .images {
     gap: 3px;
     margin-top: 8px;
     max-width: 400px;
   }
-  .maps-grid .item .right .images img{
+  .maps-grid .item .right .images img {
     width: 150px;
     height: 80px;
   }
-  
 
-  .maps-container{
+  .maps-container {
     /* background-color: red; */
     min-height: 0;
     display: grid;
-    grid-template-areas: "prev prev prev poster"
-                         "prev prev prev poster"
-                         "prev prev prev poster"
-                         "prev1 prev2 prev3 prev3";
-  
+    grid-template-areas:
+      "prev prev prev poster"
+      "prev prev prev poster"
+      "prev prev prev poster"
+      "prev1 prev2 prev3 prev3";
+
     justify-content: start;
     grid-template-columns: 1.7fr 1.7fr 1.7fr;
     gap: 8px;
     margin-top: 30px;
   }
 
-  .maps-container .prev{
+  .maps-container .prev {
     height: 40vw;
     width: 65vw;
   }
 
-  .maps-container .prev1{
+  .maps-container .prev1 {
     /* height: 100%; */
     /* display: none; */
     height: 18vw;
     /* width: 25vw; */
   }
-  .maps-container .prev2{
+  .maps-container .prev2 {
     height: 18vw;
     /* width: 25vw; */
   }
-  
-  .maps-container .prev3{
+
+  .maps-container .prev3 {
     height: 18vw;
     /* width: 25vw; */
   }
-  
-  .maps-container .poster{
+
+  .maps-container .poster {
     height: 40vw;
     width: 25vw;
   }
-  
-  .maps-ads .side{
+
+  .maps-ads .side {
     width: 50px;
   }
 
-
-  .news2{
-    /* background-color: blue; */
-  }
-  
-  
-  .news-grid{
+  .news-grid {
     /* background-color: red; */
     gap: 6px;
     padding: 70px 0;
   }
-  
-  
-  
-  .news-grid .item{
+
+  .news-grid .item {
     width: 342px;
     height: 290px;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -601,10 +547,6 @@
     height: 52vw;
   }
 
-  .pickagents .right {
-    /* background-color: blue; */
-  }
-
   .pickagents .right .title {
     font-size: 3vw;
   }
@@ -617,10 +559,6 @@
     width: 100px;
     height: 33px;
     font-size: 12px;
-  }
-
-  .waitingfor {
-    /* background-color: red; */
   }
 
   /* .waitingfor .background {
@@ -647,11 +585,6 @@
     width: 230px;
     height: 380px;
     margin-top: 90px;
-  }
-
-
-  .pickagents {
-    /* background-color: red; */
   }
 
   .pickagents img {
@@ -699,77 +632,70 @@
     margin-top: 60px;
   }
 
-
-
-  .footer{
-    /* background-color: red; */
-    /* flex-direction: column; */
-  }
-  .footer .left{
+  .footer .left {
     /* background-color: blue; */
     width: 55%;
     padding-right: 25px;
   }
-  .footer .left .title h1{
+  .footer .left .title h1 {
     font-size: 25px;
   }
 
-  .footer .left .title img{
+  .footer .left .title img {
     width: 24px;
     height: 19px;
   }
 
-  .footer .left p{
+  .footer .left p {
     font-size: 13px;
     width: auto;
   }
 
-  .footer .left .buttons{
+  .footer .left .buttons {
     margin-top: 20px;
     display: flex;
     gap: 5px;
   }
-  
-  .footer .left .buttons button{
+
+  .footer .left .buttons button {
     width: 210px;
     height: 45px;
     font-size: 12px;
   }
 
-  .footer .right{
+  .footer .right {
     width: 100%;
   }
 
-  .footer .right .upper{
+  .footer .right .upper {
     /* background-color: blue; */
     flex-direction: column;
   }
 
-  .footer .right .upper h1{
+  .footer .right .upper h1 {
     font-size: 15px;
     margin-top: 20px;
   }
 
-  .footer .right .upper ul{
+  .footer .right .upper ul {
     gap: 2px;
     margin-top: 8px;
   }
-  
-  .footer .right .upper ul li{
+
+  .footer .right .upper ul li {
     font-size: 12px;
   }
 
-  .footer .right .copyright{
+  .footer .right .copyright {
     margin-top: 30px;
     font-size: 10px;
   }
 
-  .hero-agents{
+  .hero-agents {
     padding: 0 40px;
-
   }
 
-  .hero-agents .title{
+  .hero-agents .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -778,57 +704,52 @@
     text-align: center;
   }
 
-  .hero-agents .card-container{
+  .hero-agents .card-container {
     justify-content: center;
   }
 
-  .hero-agents .card-container .card{
+  .hero-agents .card-container .card {
     width: 100%;
   }
 
-
   .hero-maps {
     min-height: 100vh;
-    padding:  0 40px;
+    padding: 0 40px;
   }
-  
+
   .hero-maps .title {
     /* background-color: red; */
     width: 100%;
     text-align: center;
   }
 
-  
-  .maps-grid{
+  .maps-grid {
     /* background-color: red; */
     gap: 40px;
   }
-  
-  .maps-grid .item{
+
+  .maps-grid .item {
     align-items: center;
     flex-direction: column;
-
   }
 
-  .maps-grid .item img{
+  .maps-grid .item img {
     width: 490px;
     height: 315px;
-  
   }
 
-  .maps-grid .item .right{
+  .maps-grid .item .right {
     padding-left: 0;
     align-items: center;
     text-align: center;
   }
 
-  .maps-grid .item .right .text h1{
+  .maps-grid .item .right .text h1 {
     font-size: 18px;
     margin-top: 20px;
-  
   }
-  
-  .maps-grid .item .right .text p{
+
+  .maps-grid .item .right .text p {
     font-size: 16px;
     letter-spacing: 0.5px;
     margin-top: 3px;
@@ -848,141 +769,125 @@
     margin-bottom: 20px;
     flex-shrink: 0; /* penting supaya tidak mengecil otomatis */
   }
-  
+
   .maps-grid .item .right .images img {
     width: 200px;
     height: auto;
   }
-  
+
   .maps-grid .item .right .images::-webkit-scrollbar {
     height: 7px;
   }
-  
+
   .maps-grid .item .right .images::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
   }
 
-
-  .maps-container{
+  .maps-container {
     /* background-color: red; */
     min-height: 0;
     display: grid;
-    grid-template-areas: "prev prev poster"
-                         "prev prev poster"
-                         "prev prev poster"
-                         "prev2 prev3 prev3";
-  
+    grid-template-areas:
+      "prev prev poster"
+      "prev prev poster"
+      "prev prev poster"
+      "prev2 prev3 prev3";
+
     justify-content: start;
     grid-template-columns: 1.7fr 1.7fr;
     gap: 8px;
     margin-top: 30px;
   }
 
-  .maps-container .prev{
+  .maps-container .prev {
     height: 40vw;
     width: 65vw;
   }
 
-  .maps-container .prev1{
+  .maps-container .prev1 {
     /* height: 100%; */
     /* display: none; */
     height: 18vw;
     /* width: 25vw; */
     display: none;
+  }
+  .maps-container .prev2 {
+    height: 18vw;
+    /* width: 25vw; */
+  }
 
-  }
-  .maps-container .prev2{
+  .maps-container .prev3 {
     height: 18vw;
     /* width: 25vw; */
   }
-  
-  .maps-container .prev3{
-    height: 18vw;
-    /* width: 25vw; */
-  }
-  
-  .maps-container .poster{
+
+  .maps-container .poster {
     height: 40vw;
     width: 25vw;
   }
-  
 
-  .maps-ads .side{
+  .maps-ads .side {
     width: 30px;
   }
 
-
-  .hero-maps .preview{
+  .hero-maps .preview {
     display: none;
   }
 
-
-  .hero-news{
+  .hero-news {
     padding: 0 30px;
   }
 
-  .hero-news .preview{
+  .hero-news .preview {
     display: none;
   }
-
 
   .hero-news .title {
     /* background-color: red; */
     width: 100%;
     text-align: center;
-
   }
 
-
-
-  .news-container{
+  .news-container {
     width: 100%;
     gap: 5px;
     justify-content: center;
   }
-  
-  .news-container .card{
+
+  .news-container .card {
     max-width: 500px;
     width: 100%;
     height: 500px;
   }
 
-  .hero-report{
+  .hero-report {
     padding: 0 30px;
   }
 
-  
   .hero-report .title {
     /* background-color: red; */
     width: 100%;
     text-align: center;
-
   }
 
-  .hero-report form{
+  .hero-report form {
     width: 100%;
   }
 
-  .hero-report .preview{
+  .hero-report .preview {
     display: none;
   }
 
-  
-
-  .news-grid{
+  .news-grid {
     justify-content: center;
-
   }
 
-  .news2 .background{
+  .news2 .background {
     width: 200vw;
     margin-left: -100px;
     /* background-color: red; */
   }
-  
-  
-
 }
 
 @media screen and (max-width: 576px) {
@@ -1004,7 +909,7 @@
     margin: 0;
   }
 
-  .hero{
+  .hero {
     min-height: 400px;
   }
 
@@ -1021,19 +926,19 @@
     letter-spacing: 1px;
   }
 
-  .hero .left a.infobutton{
+  .hero .left a.infobutton {
     display: flex;
     height: 40px;
     width: 120px;
-    justify-content: center;  
-    margin: 0;  
-  }
-
-  .hero .left .buttons button{
+    justify-content: center;
     margin: 0;
   }
 
-  .hero .left .buttons{
+  .hero .left .buttons button {
+    margin: 0;
+  }
+
+  .hero .left .buttons {
     display: flex;
     align-items: center;
     height: fit-content;
@@ -1128,177 +1033,172 @@
     margin-top: -20px;
   }
 
-  .content{
+  .content {
     /* background-color: blue; */
     width: 100%;
   }
 
-  .footer{
+  .footer {
     height: fit-content;
     background-color: #061119;
     flex-direction: column;
     padding: 30px 30px;
   }
 
-  .footer .background{
+  .footer .background {
     display: none;
   }
 
-  .footer .left{
+  .footer .left {
     /* background-color: blue; */
     width: 100%;
     padding: 0;
   }
-  .footer .left .title h1{
+  .footer .left .title h1 {
     font-size: 25px;
   }
 
-  .footer .left .title img{
+  .footer .left .title img {
     width: 24px;
     height: 19px;
   }
 
-  .footer .left p{
+  .footer .left p {
     font-size: 13px;
     width: auto;
   }
 
-  .footer .left .buttons{
+  .footer .left .buttons {
     margin-top: 20px;
     display: flex;
     gap: 5px;
   }
-  
-  .footer .left .buttons button{
+
+  .footer .left .buttons button {
     width: 210px;
     height: 45px;
     font-size: 12px;
   }
 
-  .footer .right{
+  .footer .right {
     width: 100%;
     margin-top: 20px;
   }
 
-  .footer .right .upper{
+  .footer .right .upper {
     /* background-color: blue; */
     flex-direction: row;
   }
 
-  .footer .right .upper h1{
+  .footer .right .upper h1 {
     font-size: 15px;
     margin-top: 20px;
   }
 
-  .footer .right .upper ul{
+  .footer .right .upper ul {
     gap: 2px;
     margin-top: 8px;
   }
-  
-  .footer .right .upper ul li{
+
+  .footer .right .upper ul li {
     font-size: 12px;
   }
 
-  .footer .right .copyright{
+  .footer .right .copyright {
     margin-top: 20px;
     font-size: 10px;
   }
-
-
 
   .hero-maps .title {
     /* background-color: red; */
     width: 100%;
   }
 
-  .maps-grid .item img{
+  .maps-grid .item img {
     width: 330px;
     height: 215px;
   }
 
-  .maps-grid .item .right .images{
+  .maps-grid .item .right .images {
     max-width: 90vw;
   }
 
-
-  .maps-container{
+  .maps-container {
     /* background-color: red; */
     min-height: 0;
     display: grid;
-    grid-template-areas: "prev1 poster"
-                         "prev2 poster"
-                         "prev3 poster"
-                         "prev prev";
-  
+    grid-template-areas:
+      "prev1 poster"
+      "prev2 poster"
+      "prev3 poster"
+      "prev prev";
+
     justify-content: start;
     grid-template-columns: 1.7fr 1.7fr;
     gap: 8px;
     margin-top: 30px;
   }
 
-  .maps-container .prev{
+  .maps-container .prev {
     height: auto;
     width: 100%;
   }
 
-  .maps-container .prev1{
+  .maps-container .prev1 {
     /* height: 100%; */
     /* display: none; */
     height: auto;
     /* width: 25vw; */
     display: flex;
+  }
+  .maps-container .prev2 {
+    height: auto;
+    /* width: 25vw; */
+  }
 
-  }
-  .maps-container .prev2{
+  .maps-container .prev3 {
     height: auto;
     /* width: 25vw; */
   }
-  
-  .maps-container .prev3{
-    height: auto;
-    /* width: 25vw; */
-  }
-  
-  .maps-container .poster{
+
+  .maps-container .poster {
     height: auto;
     width: 100%;
   }
 
-  .maps-ads .boxs{
+  .maps-ads .boxs {
     margin-left: 5px;
   }
 
-  .maps-ads .boxs .banner-container{
+  .maps-ads .boxs .banner-container {
     gap: 5px;
   }
 
-  .maps-ads .side{
+  .maps-ads .side {
     width: 10px;
   }
 
-  .news-container{
+  .news-container {
     /* background-color: green; */
     padding: 0px 30px;
   }
 
-
-  .hero-news{
+  .hero-news {
     padding: 0;
   }
 
-  .hero-news .title{
+  .hero-news .title {
     padding: 0 30px;
   }
-  .news2{
+  .news2 {
     background-color: #061119;
   }
 
-  .news-grid{
+  .news-grid {
     justify-content: center;
   }
 
-  .news2 .background{
+  .news2 .background {
     display: none;
   }
-  
 }
