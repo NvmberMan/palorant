@@ -309,6 +309,7 @@ function onStart() {
               <div class="image">
                 <img src="Resources/News/image-${i++}.png" alt="">
                 <h3>📅 ${element.date}</h3>
+                <div class="watermark"></div>
               </div>
               <div class="text">
                 <h4>${element.title}</h4>
